@@ -1,0 +1,12 @@
+-- Partitioned events 2022-07-14
+CREATE TABLE events (
+  event_id BIGSERIAL,
+  event_type TEXT NOT NULL,
+  payload JSONB,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+) PARTITION BY RANGE (created_at);
+
+CREATE TABLE events_2023_01 PARTITION OF events
+  FOR VALUES FROM ('2023-01-01') TO ('2023-02-01');
+CREATE TABLE events_2023_02 PARTITION OF events
+  FOR VALUES FROM ('2023-02-01') TO ('2023-03-01');
