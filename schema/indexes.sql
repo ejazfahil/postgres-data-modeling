@@ -1,4 +1,4 @@
--- Indexes 2022-06-28
+-- Indexes 2022-09-27
 CREATE INDEX idx_fact_sales_date ON fact_sales USING BRIN (sold_at);
 CREATE INDEX idx_fact_sales_customer ON fact_sales (customer_id);
 CREATE INDEX idx_dim_product_sku ON dim_product (sku);
