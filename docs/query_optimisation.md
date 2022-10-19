@@ -1,4 +1,4 @@
-# Query Optimisation 2022-08-30
+# Query Optimisation 2022-10-19
 
 ## EXPLAIN ANALYZE findings
 - Seq scan on fact_sales (12M rows) → add BRIN index on sold_at ✅
