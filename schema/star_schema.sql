@@ -1,4 +1,4 @@
--- Star schema 2022-09-21
+-- Star schema 2022-11-08
 CREATE TABLE dim_customer (
   customer_id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
