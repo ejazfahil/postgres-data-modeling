@@ -1,4 +1,4 @@
-"""Alembic env 2022-10-04"""
+"""Alembic env 2022-12-06"""
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 from alembic import context
