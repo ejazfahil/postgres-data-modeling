@@ -1,4 +1,4 @@
--- Partitioned events 2022-10-04
+-- Partitioned events 2022-12-13
 CREATE TABLE events (
   event_id BIGSERIAL,
   event_type TEXT NOT NULL,
